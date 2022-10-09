@@ -1,99 +1,141 @@
 # weatherOnTheTerminal
+Programming language: Python
+Terminal user interface: Russian
 
-# Project Title
-Viewing the weather on the terminal
-
-## Getting Started
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
-
-### Prerequisites
-
-What things you need to install the software and how to install them
-
-```
-Give examples
-```
-
-### Installing
-
-A step by step series of examples that tell you have to get a development env running
-
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
+# Viewing the weather on the terminal
+Данный скрипт погоду показывает только в Лондоне, Шереметьево и Череповце. Но разобравшись с данным скриптом вы с легкостью можете получать информацию о погоде для любого места на нашей планете.
+Для этого обратитесь к документации [https://wttr.in/:help]
 
 
-End with an example of getting some data out of the system or using it for a little demo
-
-
-Создание локального репозитория
+Создайте локальный репозиторий
 
 Предположим, что ваш проект находится в папке /home/user/project. 
 Переходим в папку с проектом /home/user/project:
-cd /home/user/project
+>>> cd /home/user/project
 
 Скачиваем проект
-git clone git@github.com:Luirol/weatherOnTheTerminal.git
+>>> git clone git@github.com:Luirol/weatherOnTheTerminal.git
 
-## Running the tests
+## Запуск тестового примера
+Для тестирования запускаем на выполнение скрипт:
+>>> python3 main_1.py
 
-Explain how to run the automated tests for this system
+Результат вывода в терминал:
 
-### Break down into end to end tests
+svo
 
-Explain what these tests test and why
+      \   /     Ясно
+       .-.      +12(10) °C     
+    ― (   ) ―   ↑ 5 м/c        
+       `-’      10 км          
+      /   \     0.0 мм         
+                        ┌─────────────┐                        
+┌───────────────────────┤ Сб. 08 окт. ├───────────────────────┐
+│             День      └──────┬──────┘       Ночь            │
+├──────────────────────────────┼──────────────────────────────┤
+│               Облачно        │     \   /     Ясно           │
+│      .--.     +13(11) °C     │      .-.      +11(8) °C      │
+│   .-(    ).   ↗ 5-6 м/c      │   ― (   ) ―   ↗ 5-8 м/c      │
+│  (___.__)__)  10 км          │      `-’      10 км          │
+│               0.0 мм | 0%    │     /   \     0.0 мм | 0%    │
+└──────────────────────────────┴──────────────────────────────┘
+                        ┌─────────────┐                        
+┌───────────────────────┤ Вс. 09 окт. ├───────────────────────┐
+│             День      └──────┬──────┘       Ночь            │
+├──────────────────────────────┼──────────────────────────────┤
+│               Пасмурно       │      .-.      Умеренный дожд…│
+│      .--.     +13(11) °C     │     (   ).    +9(8) °C       │
+│   .-(    ).   ↗ 6-7 м/c      │    (___(__)   → 2 м/c        │
+│  (___.__)__)  10 км          │   ‚‘‚‘‚‘‚‘    7 км           │
+│               0.0 мм | 0%    │   ‚’‚’‚’‚’    3.6 мм | 87%   │
+└──────────────────────────────┴──────────────────────────────┘
+                        ┌─────────────┐                        
+┌───────────────────────┤ Пн. 10 окт. ├───────────────────────┐
+│             День      └──────┬──────┘       Ночь            │
+├──────────────────────────────┼──────────────────────────────┤
+│     \   /     Солнечно       │     \   /     Ясно           │
+│      .-.      +12(11) °C     │      .-.      +6(5) °C       │
+│   ― (   ) ―   ↓ 3 м/c        │   ― (   ) ―   ↓ 1-3 м/c      │
+│      `-’      10 км          │      `-’      10 км          │
+│     /   \     0.0 мм | 0%    │     /   \     0.0 мм | 0%    │
+└──────────────────────────────┴──────────────────────────────┘
 
-```
-Give an example
-```
+Все новые фичи публикуются здесь: @igor_chubin
 
-### And coding style tests
+London
 
-Explain what these tests test and why
+      \   /     Ясно
+       .-.      16 °C          
+    ― (   ) ―   → 1 м/c        
+       `-’      10 км          
+      /   \     0.0 мм         
+                        ┌─────────────┐                        
+┌───────────────────────┤ Сб. 08 окт. ├───────────────────────┐
+│             День      └──────┬──────┘       Ночь            │
+├──────────────────────────────┼──────────────────────────────┤
+│     \   /     Солнечно       │    \  /       Переменная обл…│
+│      .-.      17 °C          │  _ /"".-.     13 °C          │
+│   ― (   ) ―   → 3 м/c        │    \_(   ).   ↑ 1-2 м/c      │
+│      `-’      10 км          │    /(___(__)  10 км          │
+│     /   \     0.0 мм | 0%    │               0.0 мм | 0%    │
+└──────────────────────────────┴──────────────────────────────┘
+                        ┌─────────────┐                        
+┌───────────────────────┤ Вс. 09 окт. ├───────────────────────┐
+│             День      └──────┬──────┘       Ночь            │
+├──────────────────────────────┼──────────────────────────────┤
+│     \   /     Солнечно       │               Пасмурно       │
+│      .-.      18 °C          │      .--.     14 °C          │
+│   ― (   ) ―   ↑ 5 м/c        │   .-(    ).   ↑ 1-2 м/c      │
+│      `-’      10 км          │  (___.__)__)  10 км          │
+│     /   \     0.0 мм | 0%    │               0.0 мм | 0%    │
+└──────────────────────────────┴──────────────────────────────┘
+                        ┌─────────────┐                        
+┌───────────────────────┤ Пн. 10 окт. ├───────────────────────┐
+│             День      └──────┬──────┘       Ночь            │
+├──────────────────────────────┼──────────────────────────────┤
+│  _`/"".-.     Местами дождь  │     \   /     Ясно           │
+│   ,\_(   ).   15 °C          │      .-.      +12(11) °C     │
+│    /(___(__)  ↓ 4 м/c        │   ― (   ) ―   ↘ 2-3 м/c      │
+│      ‘ ‘ ‘ ‘  10 км          │      `-’      10 км          │
+│     ‘ ‘ ‘ ‘   0.3 мм | 66%   │     /   \     0.0 мм | 0%    │
+└──────────────────────────────┴──────────────────────────────┘
 
-```
-Give an example
-```
+Все новые фичи публикуются здесь: @igor_chubin
 
-## Deployment
+Череповец
 
-Add additional notes about how to deploy this on a live system
-
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone who's code was used
-* Inspiration
-* etc
+      \   /     Ясно
+       .-.      +12(9) °C      
+    ― (   ) ―   ↑ 6 м/c        
+       `-’      10 км          
+      /   \     0.0 мм         
+                        ┌─────────────┐                        
+┌───────────────────────┤ Сб. 08 окт. ├───────────────────────┐
+│             День      └──────┬──────┘       Ночь            │
+├──────────────────────────────┼──────────────────────────────┤
+│     \   /     Солнечно       │               Облачно        │
+│      .-.      +12(10) °C     │      .--.     +11(8) °C      │
+│   ― (   ) ―   ↗ 6-7 м/c      │   .-(    ).   ↗ 6-10 м/c     │
+│      `-’      10 км          │  (___.__)__)  10 км          │
+│     /   \     0.0 мм | 0%    │               0.0 мм | 0%    │
+└──────────────────────────────┴──────────────────────────────┘
+                        ┌─────────────┐                        
+┌───────────────────────┤ Вс. 09 окт. ├───────────────────────┐
+│             День      └──────┬──────┘       Ночь            │
+├──────────────────────────────┼──────────────────────────────┤
+│      .-.      Слабая морось  │     \   /     Ясно           │
+│     (   ).    +10(8) °C      │      .-.      +8(5) °C       │
+│    (___(__)   ↗ 5-7 м/c      │   ― (   ) ―   → 3-5 м/c      │
+│     ‘ ‘ ‘ ‘   2 км           │      `-’      10 км          │
+│    ‘ ‘ ‘ ‘    0.7 мм | 91%   │     /   \     0.0 мм | 0%    │
+└──────────────────────────────┴──────────────────────────────┘
+                        ┌─────────────┐                        
+┌───────────────────────┤ Пн. 10 окт. ├───────────────────────┐
+│             День      └──────┬──────┘       Ночь            │
+├──────────────────────────────┼──────────────────────────────┤
+│    \  /       Переменная обл…│     \   /     Ясно           │
+│  _ /"".-.     +9(7) °C       │      .-.      +6(4) °C       │
+│    \_(   ).   ↗ 3-4 м/c      │   ― (   ) ―   ↗ 3-6 м/c      │
+│    /(___(__)  10 км          │      `-’      10 км          │
+│               0.0 мм | 0%    │     /   \     0.0 мм | 0%    │
+└──────────────────────────────┴──────────────────────────────┘
