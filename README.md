@@ -11,7 +11,7 @@ Terminal user interface: Russian
 
 Предположим, что ваш проект находится в папке /home/user/project. 
 Переходим в папку с проектом /home/user/project:
->>> cd /home/user/project
+```cd /home/user/project```
 
 Скачиваем проект
 >>> git clone git@github.com:Luirol/weatherOnTheTerminal.git
