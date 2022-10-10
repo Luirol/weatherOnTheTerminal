@@ -16,10 +16,14 @@
 
 ```git clone git@github.com:Luirol/weatherOnTheTerminal.git```
 
+Создание виртуального окружения:
+Выполните команду:
+```pip install -r requirements.txt```
+
 ## Запуск тестового примера
 Для тестирования запускаем на выполнение скрипт:
 
-```python3 main_1.py```
+```python3 weather.py```
 
 Результат вывода в терминал:
 ```
