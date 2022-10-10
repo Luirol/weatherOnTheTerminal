@@ -11,17 +11,20 @@ Terminal user interface: Russian
 
 Предположим, что ваш проект находится в папке /home/user/project. 
 Переходим в папку с проектом /home/user/project:
+
 ```cd /home/user/project```
 
 Скачиваем проект
->>> git clone git@github.com:Luirol/weatherOnTheTerminal.git
+
+```git clone git@github.com:Luirol/weatherOnTheTerminal.git```
 
 ## Запуск тестового примера
 Для тестирования запускаем на выполнение скрипт:
->>> python3 main_1.py
+
+```python3 main_1.py```
 
 Результат вывода в терминал:
-
+```
 svo
 
       \   /     Ясно
@@ -139,3 +142,4 @@ London
 │    /(___(__)  10 км          │      `-’      10 км          │
 │               0.0 мм | 0%    │     /   \     0.0 мм | 0%    │
 └──────────────────────────────┴──────────────────────────────┘
+```
